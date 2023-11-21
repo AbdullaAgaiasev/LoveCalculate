@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LoveFragment">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:background="@drawable/love_calculation"
+       android:layout_height="230dp"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:text="Love Calculator"
+       android:textSize="30sp"
+       android:textStyle="bold"
+       android:textColor="@android:color/holo_red_dark"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:text="First Name"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:textColor="@android:color/holo_red_dark"/>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/et_fname"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="You" />
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:text="Second Name"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:textColor="@android:color/holo_red_dark"/>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/et_sname"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Me" />
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <Button
+       android:id="@+id/btn_calculate"
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:text="Calculate"
+       android:layout_gravity="center"/>
+
+</LinearLayout>
